@@ -1,9 +1,81 @@
 {
-  "repoName": "test11",
-  "projectType": "image",
-  "graph": {
-    "nodes": [
+  "meta": {
+    "id": null,
+    "name": "test11",
+    "version": "v0.1",
+    "graph": {
+      "nodes": [
+        {
+          "id": "sysInput",
+          "type": "inputNode",
+          "position": {
+            "x": -200,
+            "y": 350
+          },
+          "data": {
+            "label": "System Input",
+            "schema": []
+          },
+          "measured": {
+            "width": 334,
+            "height": 165
+          },
+          "selected": false,
+          "dragging": false
+        },
+        {
+          "id": "sysOutput",
+          "type": "outputNode",
+          "position": {
+            "x": 900,
+            "y": 350
+          },
+          "data": {
+            "label": "System Output",
+            "schema": []
+          },
+          "measured": {
+            "width": 334,
+            "height": 165
+          },
+          "selected": false,
+          "dragging": false
+        }
+      ],
+      "edges": [],
+      "viewport": {
+        "x": 412.01,
+        "y": 154.54,
+        "zoom": 0.58
+      }
+    },
+    "assets": [
       {
+        "id": "6d6dc2fd-65fd-48c3-93a2-55e372901c0e",
+        "name": "studio",
+        "url": "http://localhost:3001/studio?project=test06&owner=alan-w-arch",
+        "source": "Direct Link",
+        "size": "Remote",
+        "createdAt": "2026-03-03T13:53:29.173Z"
+      }
+    ],
+    "datasets": [
+      {
+        "id": "6d6dc2fd-65fd-48c3-93a2-55e372901c0e",
+        "name": "studio",
+        "url": "http://localhost:3001/studio?project=test06&owner=alan-w-arch",
+        "source": "Direct Link",
+        "size": "Remote",
+        "createdAt": "2026-03-03T13:53:29.173Z"
+      }
+    ],
+    "readme": "",
+    "meta": {},
+    "lastSaved": "2026-03-03T13:55:03.380Z"
+  },
+  "graph": {
+    "nodes": {
+      "0": {
         "id": "sysInput",
         "type": "inputNode",
         "position": {
@@ -21,7 +93,7 @@
         "selected": false,
         "dragging": false
       },
-      {
+      "1": {
         "id": "sysOutput",
         "type": "outputNode",
         "position": {
@@ -38,14 +110,45 @@
         },
         "selected": false,
         "dragging": false
+      },
+      "sys_input": {
+        "id": "sys_input",
+        "type": "sys_input",
+        "label": "Input Data",
+        "x": 100,
+        "y": 300,
+        "width": 200,
+        "height": 100,
+        "data": {
+          "datasetId": "6d6dc2fd-65fd-48c3-93a2-55e372901c0e",
+          "tableName": "users"
+        },
+        "status": "idle"
+      },
+      "sys_output": {
+        "id": "sys_output",
+        "type": "sys_output",
+        "label": "Model Output",
+        "x": 800,
+        "y": 300,
+        "width": 200,
+        "height": 100,
+        "data": {
+          "result": null
+        },
+        "status": "idle"
       }
-    ],
-    "edges": [],
-    "viewport": {
-      "x": 412.01,
-      "y": 154.54,
-      "zoom": 0.58
-    }
+    },
+    "edges": []
   },
-  "assets": []
+  "assets": [
+    {
+      "id": "6d6dc2fd-65fd-48c3-93a2-55e372901c0e",
+      "name": "studio",
+      "url": "http://localhost:3001/studio?project=test06&owner=alan-w-arch",
+      "source": "Direct Link",
+      "size": "Remote",
+      "createdAt": "2026-03-03T13:53:29.173Z"
+    }
+  ]
 }
